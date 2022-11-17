@@ -23,10 +23,10 @@ def random_date(start, end, prop):
 # Connect to the MariaDB instance
 try:
     conn = mariadb.connect(
-        user="root",
-        password="root",
-        host="ec2-3-145-100-54.us-east-2.compute.amazonaws.com",
-        port=4306,
+        user="<enter-username-here>",
+        password="<enter-password-here>",
+        host="<enter-hostname-or-ip-address-here>",
+        port=3306,
         database="medical_analysis"
     )
 except mariadb.Error as e:
